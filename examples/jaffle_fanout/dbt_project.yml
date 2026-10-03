@@ -1,0 +1,5 @@
+name: jaffle_fanout
+version: "1.0.0"
+config-version: 2
+profile: jaffle_fanout
+model-paths: ["models"]

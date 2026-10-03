@@ -1,0 +1,40 @@
+version: 2
+
+sources:
+  - name: shop
+    schema: raw_shop
+    tables:
+      - name: orders
+        columns:
+          - name: id
+            data_tests: [unique, not_null]
+          - name: customer_id
+          - name: order_date
+          - name: status
+          - name: amount
+      - name: payments
+        columns:
+          - name: id
+            tests: [unique, not_null]
+          - name: order_id
+          - name: payment_method
+          - name: amount
+      - name: customers
+        columns:
+          - name: id
+            tests: [unique]
+          - name: first_name
+          - name: last_name
+          - name: region
+      - name: support_tickets
+        columns:
+          - name: id
+            tests: [unique]
+          - name: customer_id
+          - name: opened_at
+          - name: minutes_spent
+      - name: web_events
+        columns:
+          - name: event_id
+          - name: customer_id
+          - name: event_type

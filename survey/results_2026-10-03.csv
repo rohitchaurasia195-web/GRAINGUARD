@@ -1,0 +1,15 @@
+repo,models,parse_errors,joins_total,joins_proven_safe,joins_fanout,joins_unknown,aggregates_total,aggregates_after_join,fanout_errors,chasm_errors,unknown_warnings,models_with_errors
+dbt-labs/jaffle_shop,5,0,4,4,0,0,6,1,0,0,0,0
+dbt-labs/jaffle-shop,13,0,5,5,0,0,13,0,0,0,0,0
+dbt-labs/jaffle_shop_duckdb,5,0,4,4,0,0,6,1,0,0,0,0
+fivetran/dbt_shopify,264,0,183,86,42,55,381,186,37,12,38,11
+fivetran/dbt_hubspot,205,9,79,25,4,50,60,22,0,0,0,0
+fivetran/dbt_salesforce,28,1,29,22,3,4,105,34,0,24,0,1
+fivetran/dbt_stripe,69,6,34,10,0,24,51,17,0,0,14,0
+fivetran/dbt_zendesk,100,1,100,22,4,74,117,12,0,14,30,1
+fivetran/dbt_jira,61,2,40,15,1,24,28,2,0,0,2,0
+fivetran/dbt_quickbooks,146,1,159,5,1,153,18,12,0,0,6,0
+fivetran/dbt_netsuite,108,5,59,18,0,41,0,0,0,0,0,0
+fivetran/dbt_google_ads,40,0,23,2,0,21,51,42,0,0,42,0
+Velir/dbt-ga4,60,2,29,12,11,6,52,6,2,0,0,1
+dbt-labs/dbt-project-evaluator,48,10,17,6,0,11,25,11,0,0,6,0

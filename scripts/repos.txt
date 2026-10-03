@@ -1,0 +1,14 @@
+https://github.com/dbt-labs/jaffle_shop
+https://github.com/dbt-labs/jaffle-shop
+https://github.com/dbt-labs/jaffle_shop_duckdb
+https://github.com/fivetran/dbt_shopify
+https://github.com/fivetran/dbt_hubspot
+https://github.com/fivetran/dbt_salesforce
+https://github.com/fivetran/dbt_stripe
+https://github.com/fivetran/dbt_zendesk
+https://github.com/fivetran/dbt_jira
+https://github.com/fivetran/dbt_quickbooks
+https://github.com/fivetran/dbt_netsuite
+https://github.com/fivetran/dbt_google_ads
+https://github.com/Velir/dbt-ga4 . bigquery
+https://github.com/dbt-labs/dbt-project-evaluator

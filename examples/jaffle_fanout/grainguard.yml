@@ -1,0 +1,3 @@
+dialect: snowflake
+tables:
+  raw.exchange_rates: [[currency, rate_date]]

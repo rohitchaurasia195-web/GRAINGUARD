@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "grainguard"
+version = "0.1.0"
+description = "Static checker that stops SQL joins from silently inflating your aggregates. Infers the grain of every table and query and flags SUM, COUNT and AVG computed on top of fan out joins before the query runs."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Rohit Chaurasia" }]
+keywords = ["sql", "dbt", "data-quality", "static-analysis", "fan-out", "grain", "lint", "analytics-engineering"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Database",
+  "Topic :: Software Development :: Quality Assurance",
+]
+dependencies = [
+  "sqlglot>=25.0",
+  "PyYAML>=6.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "duckdb>=0.10"]
+
+[project.scripts]
+grainguard = "grainguard.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/rohitchaurasia195-web/GRAINGUARD"
+Issues = "https://github.com/rohitchaurasia195-web/GRAINGUARD/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
